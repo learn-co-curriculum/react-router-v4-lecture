@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #fc4a1a;
   padding: 20px;
@@ -25,6 +20,18 @@
     width: 800px;
     height: 75vh;
     border-radius: 5px;
+}
+
+.mainContent {
+  float: left;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-height: 300px;
+  border: 2px solid white;
 }
 
 h1 {
