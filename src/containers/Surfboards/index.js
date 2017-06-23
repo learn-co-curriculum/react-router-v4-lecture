@@ -71,7 +71,7 @@ class Surfboards extends Component {
             className="sidebarNavlink"
             to="/surfboards/new"
           >
-            Add Surfboard
+            <h2 className="addBoardLink">+</h2>
           </NavLink>
           {renderSurfboardLinks}
           
