@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import Surfboards from './Surfboards';
 import SurfboardDetail from '../components/SurfboardDetail';
 import SurfboardForm from '../components/SurfboardForm';
@@ -22,7 +21,7 @@ class App extends Component {
           <Route 
             exact
             path="/" 
-            render={() => <div className="mainContent">Welcome to the Surfboard collection app</div>} 
+            render={() => <h2 className="pageHeader">Welcome to the Surfboard collection app</h2>} 
           />
           <Route 
             path="/surfboards" 
@@ -30,7 +29,7 @@ class App extends Component {
           />
           <Route 
             path="/about" 
-            render={() => <div className="mainContent">This App allows you to store your surfboard collection details</div>} 
+            render={() => <h2 className="pageHeader">This App allows you to store your surfboard collection details</h2>} 
           />
         </div>
       </Router>
