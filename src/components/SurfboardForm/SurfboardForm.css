@@ -1,5 +1,5 @@
 .form {
-  margin: 60px auto;
+  margin: 40px auto;
   width: 300px;
 }
 
@@ -43,6 +43,7 @@ input {
   font-size: 16px;
   font-weight: 200;
   padding: 10px 0;
+  margin-bottom: 6px;
   width: 250px;
   transition: border .5s;
 }
