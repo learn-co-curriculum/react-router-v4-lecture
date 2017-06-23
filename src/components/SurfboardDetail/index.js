@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import surfboards from '../../data/surfboards';
 
 class SurfboardDetail extends Component {
 
   render() {
-    const surfboard = surfboards.filter(board => board.id == this.props.match.params.surfboardId)[0]; 
+    const { surfboard } = this.props; 
 
     return (
       <div className="mainContent">
