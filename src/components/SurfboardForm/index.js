@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import surfboards from '../../data/surfboards';
+import _ from 'lodash';
 import './SurfboardForm.css';
 
 const validates = ({ brand, model, size, imageURL }) => {
@@ -26,14 +26,14 @@ const validates = ({ brand, model, size, imageURL }) => {
 
 class SurfboardForm extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       brand: '',
       model: '',
       size: '', 
-      imageURL: ''
+      imageURL: '',
     }
   }
 
@@ -51,11 +51,12 @@ class SurfboardForm extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     let errors = validates(this.state)
-    if (errors.length > 0) {
+    if (errors === {}) {
       this.setState({ errors })
+    } else {
+      const newBoard = _.omit(this.state, ["errors"])
+      this.props.addSurfboard(newBoard)
     }
-
-    surfboards.push(Object.assign({}, this.state, { id: surfboards.lenght + 1 }))
   }
 
   render() {
