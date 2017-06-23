@@ -11,12 +11,12 @@
   background-color: #fc4a1a;
   padding: 20px;
   color: white;
+  border-bottom: 2px solid white;
 }
 
 .App-intro {
   font-size: large;
 }
-
 
 .divBox {
     margin: 60px auto;
