@@ -22,8 +22,27 @@
     border-radius: 5px;
 }
 
+.navlink {
+  margin: 12px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 6px;
+}
+
+.activeNavlink {
+  background: white;
+  color: #fc4a1a;
+}
+
+.sidebarNavlink {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
 .mainContent {
-  float: left;
   color: white;
   padding: 20px;
   text-align: center;

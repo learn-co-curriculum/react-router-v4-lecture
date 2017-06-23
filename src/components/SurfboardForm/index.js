@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import surfboards from '../../data/surfboards';
 import './SurfboardForm.css';
 
 const validates = ({ brand, model, size, imageURL }) => {
@@ -50,7 +51,11 @@ class SurfboardForm extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     let errors = validates(this.state)
-    this.setState({ errors })
+    if (errors.length > 0) {
+      this.setState({ errors })
+    }
+
+    surfboards.push(Object.assign({}, this.state, { id: surfboards.lenght + 1 }))
   }
 
   render() {

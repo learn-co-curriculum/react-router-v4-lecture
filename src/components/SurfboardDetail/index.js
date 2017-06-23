@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import surfboards from '../../data/surfboards';
 
-// TODO: Find Surfboard from props
-
 class SurfboardDetail extends Component {
 
   render() {
+    const surfboard = surfboards.filter(board => board.id == this.props.match.params.surfboardId)[0]; 
+
     return (
       <div className="mainContent">
-        <h1>{surfboards[0].brand}</h1>
-        <p>{surfboards[0].model}</p>
-        <p>{surfboards[0].size}</p>
+        <h1>{surfboard.brand}</h1>
+        <p>{surfboard.model}</p>
+        <p>{surfboard.size}</p>
         <img 
           className="imageURL" 
-          src={surfboards[0].imageURL} 
-          alt={surfboards[0].model}
+          src={surfboard.imageURL} 
+          alt={surfboard.model}
         />
       </div>
     )
