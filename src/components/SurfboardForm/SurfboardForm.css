@@ -1,0 +1,83 @@
+.form {
+  margin: 60px auto;
+  width: 300px;
+}
+.formScreen {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px
+}
+
+.appTitle {
+  text-align: center;
+  color: #777;
+}
+
+.surfboardForm {
+  text-align: center;
+}
+
+.error {
+  background: #fc4a1a;
+  border: 2px solid transparent;
+  color: ghostwhite;
+  margin: 10px 5px;
+  border-radius: 3px;
+  padding: 10px 4px;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  transition: border .5s;
+}
+
+.controlGroup {
+  margin: 10px 0;
+}
+
+input {
+  text-align: center;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border .5s;
+}
+
+input:focus {
+  border: 2px solid #3498DB;
+  box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #813772;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  border: solid 2px #813772;
+  color: #813772;
+  cursor: pointer;
+}
+
+.surfboardLink {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}

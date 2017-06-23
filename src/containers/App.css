@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #fc4a1a;
   padding: 20px;
   color: white;
 }
@@ -28,35 +28,34 @@
 }
 
 h1 {
-    padding: 16px 0 0;
+  padding: 16px 0 0;
 }
 
 hr {
-    height: 3px;
-    border: none;
-    background: #813772;
-    margin-bottom: 0;
+  height: 3px;
+  border: none;
+  background: #813772;
+  margin-bottom: 0;
 }
-
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     
-    .divBox {
-        width: 300px;
-    }
+  .divBox {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
     
-    .divBox {
-        width: 420px;
-    }
+  .divBox {
+    width: 420px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-    .divBox {
-        width: 600px;
-    }
+  .divBox {
+    width: 600px;
+  }
 }
 
