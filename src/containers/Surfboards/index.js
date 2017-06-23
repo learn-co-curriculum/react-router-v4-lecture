@@ -53,43 +53,22 @@ class Surfboards extends Component {
 
   render() {
     const { surfboards } = this.state;
-    const renderSurfboardLinks = surfboards.map(board =>
-      <NavLink 
-        key={board.id}
-        className="sidebarNavlink"
-        to={`/surfboards/${board.id}`}
-      >
-        {board.brand} {board.model}
-      </NavLink>
-    )
 
     return (
       <div>
         <div className="sidebar">
           <h2>Surfboards</h2>
-          <NavLink 
-            className="sidebarNavlink"
-            to="/surfboards/new"
-          >
-            <h2 className="addBoardLink">+</h2>
-          </NavLink>
-          {renderSurfboardLinks}
-          
+          {/*
+            Todo: Add NavLinks for Surfboards and NewSurfboard Form
+            use className "sidebarNavlink" for NavLinks
+          */}
         </div>
         <div className="mainContent">
-          <Switch>
-            <Route 
-              path="/surfboards/new" 
-              render={() => <SurfboardForm addSurfboard={this.addSurfboard} />}
-            />
-            <Route 
-              path="/surfboards/:surfboardId" 
-              render={({ match }) => {
-                const surfboard = surfboards.filter(board => board.id == match.params.surfboardId)[0];
-                return <SurfboardDetail surfboard={surfboard} />
-              }}
-            />
-          </Switch>
+          {/*
+            TODO: Add Routes for:
+              /surfboards/new
+              /surfboards/:surfboardId
+          */}
         </div>
       </div>
     )

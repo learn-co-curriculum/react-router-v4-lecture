@@ -18,19 +18,12 @@ class App extends Component {
           <div>
 
           </div>
-          <Route 
-            exact
-            path="/" 
-            render={() => <h2 className="pageHeader">Welcome to the Surfboard collection app</h2>} 
-          />
-          <Route 
-            path="/surfboards" 
-            component={Surfboards} 
-          />
-          <Route 
-            path="/about" 
-            render={() => <h2 className="pageHeader">This App allows you to store your surfboard collection details</h2>} 
-          />
+          {/*
+            Add Routes for:
+              /
+              /surfboards
+              /about
+          */}
         </div>
       </Router>
     );
