@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.divBox {
+    margin: 60px auto;
+    background-color: #FFF;
+    padding: 20px;
+    width: 800px;
+    height: 75vh;
+    border-radius: 5px;
+}
+
+h1 {
+    padding: 16px 0 0;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    background: #813772;
+    margin-bottom: 0;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .divBox {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    
+    .divBox {
+        width: 420px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .divBox {
+        width: 600px;
+    }
+}
+
