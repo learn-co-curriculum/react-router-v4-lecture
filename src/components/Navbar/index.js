@@ -1,14 +1,11 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 
-const Navbar = () => 
+const Navbar = () =>
   <div>
-    {/*
-      TODO: Add NavLinks for top level routes:
-        /
-        /surfboards 
-        /about
-        use className "navlink" & activeNavlink for activeClassName
-    */}
+    <NavLink exact to='/' className="navlink" activeClassName='activeNavlink'> Home</NavLink>
+    <NavLink to='/about' className="navlink" activeClassName='activeNavlink'> About</NavLink>
+    <NavLink to='/surfboards' className="navlink" activeClassName='activeNavlink'> Surfboards</NavLink>
   </div>;
 
 export default Navbar;

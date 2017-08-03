@@ -4,6 +4,7 @@ import SurfboardDetail from '../components/SurfboardDetail';
 import SurfboardForm from '../components/SurfboardForm';
 import Navbar from '../components/Navbar';
 import './App.css';
+import {Route} from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -14,14 +15,9 @@ class App extends Component {
             <Navbar />
           </div>
           <div>
-
+            <Route path="/surfboards" component={Surfboards}/>
+            <Route path="/about" render={()=>(<h1>About surfboards</h1>)}/>
           </div>
-          {/*
-            Add Routes for:
-              /
-              /surfboards
-              /about
-          */}
         </div>
     );
   }

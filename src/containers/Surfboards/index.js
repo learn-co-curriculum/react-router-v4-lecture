@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SurfboardDetail from '../../components/SurfboardDetail';
 import SurfboardForm from '../../components/SurfboardForm';
+import {NavLink, Route, Switch} from 'react-router-dom'
 
 class Surfboards extends Component {
 
@@ -57,21 +58,19 @@ class Surfboards extends Component {
       <div>
         <div className="sidebar">
           <h2>Surfboards</h2>
-          {/*
-            Todo: Add NavLinks for Surfboards and NewSurfboard Form
-            use className "sidebarNavlink" for NavLinks
-          */}
+          {surfboards.map((surfboard)=>(<NavLink to={`/surfboards/${surfboard.id}`} className="sidebarNavlink"><img src={surfboard.imageURL} height='70'width='70'/></NavLink>))}
+          <NavLink to='/surfboards/new' className="sidebarNavlink">ADD A NEW BOARD</NavLink>
         </div>
         <div className="mainContent">
-          {/*
-            TODO: Add Routes for:
-              /surfboards/new
-              /surfboards/:surfboardId
-          */}
+          <Switch>
+            <Route path={`${this.props.match.url}/new`} render={()=>(<SurfboardForm addSurfboard={this.addSurfboard}/>)}/>
+            <Route path ="/surfboards/:id" render={({match})=> (<SurfboardDetail surfboard={ surfboards.find(
+              surfboard=> {return match.params.id == surfboard.id}) }/>)
+            }/>
+          </Switch>
         </div>
       </div>
     )
   }
 }
-
 export default Surfboards;
